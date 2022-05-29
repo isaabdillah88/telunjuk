@@ -10,16 +10,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(
-    to left,
-    rgba(7, 27, 82, 1) 0%,
-    rgba(0, 128, 128, 1) 100%
-  );
+  background: #f2f2f2;
   text-align: center;
 }
 
 .App {
   padding: 50px 0 100px;
+}
+
+.task-link {
+  display: inline-block;
+  margin: 50px 25px;
+  padding: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+}
+
+.back-link {
+  margin: 10px auto 30px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .search-box {
@@ -127,4 +139,46 @@ body {
   vertical-align: middle;
   width: 70px;
   margin: 0 5px;
+}
+
+.tokopedia-page div {
+  padding: 30px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.header,
+.content,
+.content-product {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.header,
+.content,
+.content-left,
+.content-right,
+.content-product {
+  padding: 0 !important;
+}
+
+.header {
+  align-items: center;
+}
+
+.header div,
+.content-product div {
+  flex: 1 1 0;
+}
+
+.header-search {
+  flex-grow: 5 !important;
+}
+
+.content-left {
+  flex-grow: 2;
+}
+
+.content-right {
+  flex-grow: 1;
 }
